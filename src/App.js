@@ -9,15 +9,17 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      todo: []
+      todo: [],   
     };
   }
 
   handleChange = (values, id) => {
     debugger;
-    this.setState({ todo: [...this.state.todo, values] });
+    this.setState({ todo: [...this.state.todo, values],id:'' });
+    debugger;
   };
   removeTodo(id) {
+    debugger;
     const filtertodo = this.state.todo.filter(todo => todo.id !== id);
     this.setState({
       todo: filtertodo
@@ -27,9 +29,9 @@ class App extends React.Component {
     return (
       <div className="App">
         {/* <Counter /> */}
-        <Todo handleChange={this.handleChange} removeTodo={this.removeTodo} />
+        <Todo handleChange={this.handleChange} />
 
-        <TodoList todo={this.state.todo} />
+        <TodoList todo={this.state.todo} removeTodo={this.removeTodo} />
       </div>
     );
   }
