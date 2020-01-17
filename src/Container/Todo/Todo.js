@@ -1,24 +1,18 @@
 import React from "react";
 import { Formik, Field, Form } from "formik";
 import Button from "@material-ui/core/Button";
-
 class Todo extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      todo: []
-    };
-  }
   render() {
     return (
       <div>
         <Formik
           initialValues={{
-            addtask: ""
+            addtask: "",
+            id: Date.now()
           }}
           onSubmit={(values, { resetForm, setSubmitting }) => {
             setSubmitting(true);
-            this.setState({ todo: [...this.state.todo, values.addtask] });
+            this.props.handleChange(values.addtask, values.id);
             resetForm();
             setSubmitting(false);
           }}
