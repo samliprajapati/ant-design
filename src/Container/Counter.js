@@ -3,7 +3,6 @@ using Constructor
 */
 import React, { Component } from "react";
 import Button from "@material-ui/core/Button";
-import Todo from "./Todo";
 class Counter extends Component {
   constructor(props) {
     super(props);

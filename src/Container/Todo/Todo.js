@@ -7,12 +7,11 @@ class Todo extends React.Component {
       <div>
         <Formik
           initialValues={{
-            addtask: "",
-            id: Date.now()
+            addtask: ""
           }}
           onSubmit={(values, { resetForm, setSubmitting }) => {
             setSubmitting(true);
-            this.props.handleChange(values.addtask, values.id);
+            this.props.handleChange(values.addtask, Date.now());
             resetForm();
             setSubmitting(false);
           }}
