@@ -28,7 +28,7 @@ class App extends React.Component {
     this.setState({
       todo: this.state.todo.map(item => {
         console.log(item);
-        return item.id === id ? { addtask, checked: !checked } : item;
+        return item.id === id ? { addtask, id, checked: !checked } : item;
       })
     });
   };
