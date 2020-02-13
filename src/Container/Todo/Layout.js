@@ -6,6 +6,7 @@ import Counter from "../Counter";
 import Array1 from "../Array1";
 import Array2 from "../Array2";
 import Margin from "../CSS/Margin";
+import NavMenu from "../CSS/NavMenu";
 class Layout extends Component {
   render() {
     return (
@@ -17,6 +18,7 @@ class Layout extends Component {
           <Route exact path="/array1" component={Array1} />
           <Route exact path="/array2" component={Array2} />
           <Route exact path="/margin" component={Margin} />
+          <Route exact path="/navmenu" component={NavMenu} />
         </Switch>
       </div>
     );

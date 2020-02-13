@@ -1,9 +1,11 @@
 import React from "react";
 import "./margin.css";
+import NavMenu from "./NavMenu";
 class Margin extends React.Component {
   render() {
     return (
       <div>
+        <NavMenu />
         <div className="main">
           <div className="first">
             <p>Margin auto</p>
