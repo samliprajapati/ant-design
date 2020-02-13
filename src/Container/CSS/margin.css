@@ -1,0 +1,58 @@
+.main {
+  border: 2px solid yellowgreen;
+}
+.first {
+  border: 2px solid red;
+  height: 50px;
+  width: 200px;
+  margin: auto;
+}
+.second {
+  border: 2px solid yellowgreen;
+  height: 50px;
+  width: 200px;
+  margin: 30px;
+}
+.third {
+  border: 2px solid yellowgreen;
+  height: 50px;
+  width: 200px;
+  margin: 30px auto;
+}
+.fourth {
+  border: 2px solid blueviolet;
+  height: 50px;
+  width: 200px;
+  margin: auto 30px;
+}
+.fifth {
+  border: 2px solid red;
+  height: 50px;
+  width: 200px;
+  margin: 30px 30px 30px 30px;
+}
+.sixth {
+  border: 2px solid yellow;
+  height: 50px;
+  width: 200px;
+  margin: 30px 10px 10px 30px;
+}
+.seventh {
+  border: 2px solid black;
+  height: 50px;
+  width: 200px;
+  margin: 40px 30px 20px 10px;
+}
+.eight {
+  background-color: rgb(144, 235, 235);
+  height: 100px;
+  padding: 40px;
+}
+.scnd {
+  border: 3px solid green;
+  height: 100px;
+  width: 200px;
+  display: inline-block;
+  padding: 10px;
+  margin: 20px;
+}

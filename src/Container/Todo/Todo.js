@@ -22,6 +22,7 @@ class Todo extends React.Component {
               <div>
                 <Field type="addtask" name="addtask" placeholder="Add task" />
               </div>
+              <br />
               <div>
                 <Button
                   type="submit"

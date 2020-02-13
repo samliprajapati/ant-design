@@ -1,6 +1,7 @@
 import React from "react";
 import Todo from "./Container/Todo/Todo";
 import TodoList from "./Container/Todo/TodoList";
+import "./App.css";
 
 class App extends React.Component {
   constructor(props) {
@@ -34,7 +35,7 @@ class App extends React.Component {
   };
   render() {
     return (
-      <div>
+      <div className="todo">
         <Todo handleChange={this.handleChange} />
         <TodoList
           todo={this.state.todo}
@@ -42,12 +43,6 @@ class App extends React.Component {
           handleItemClick={this.handleItemClick}
           handleEdit={this.handleEdit}
         />
-        {/* <LandingPage /> */}
-        {/* <Counter />
-
-        <Array1 />
-        <Array2 /> */}
-        {/* <Object /> */}
       </div>
     );
   }
