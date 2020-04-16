@@ -58,12 +58,11 @@
 }
 li {
   display: inline-block;
-  /* background-color: black; */
   color: white;
   margin: 20px;
-  float: right;
+  float: left;
 }
 .nav {
-  background-color: black;
+  /* background-color: black; */
   height: 60px;
 }

@@ -32,6 +32,11 @@ class LandingPage extends React.Component {
                 <Link to="/array2"> GoTo Array Page</Link>
               </Card>
             </Col>
+            <Col span={8}>
+              <Card title="user details" bordered={false}>
+                <Link to="/user_details"> user Details</Link>
+              </Card>
+            </Col>
           </Row>
         </div>
       </div>
