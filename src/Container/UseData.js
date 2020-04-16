@@ -13,6 +13,8 @@ export default class UseData extends Component {
             <br />
             {this.props.data.address}
             <br />
+            {this.props.data.address}
+            <br />
             {this.props.data.heightQualification}
           </div>
         </span>
